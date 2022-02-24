@@ -1,0 +1,47 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\ValidationException;
+
+class {{ class }}{
+
+  /**
+   * Define the rules for validation
+   *
+   * @return array
+   */
+  public function rules() 
+  {
+      return [];
+  }
+
+  /**
+   * Define a custom messages for validation rules
+   *
+   * @return array
+   */
+  public function messages() 
+  {
+      return [];
+  }
+
+  /**
+   * Execute an valation attemp according validation rules
+   *
+   * @param array $data
+   * @return void
+   *
+   * @throws \Illuminate\Validation\ValidationException
+   */
+  public function validate(array $data)
+  {
+      $validator = Validator::make($data, $this->rules(), $this->messages());
+
+      if ($validator->fails()) {
+          throw new ValidationException($validator);
+      }
+  }
+
+}

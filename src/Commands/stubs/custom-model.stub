@@ -1,0 +1,63 @@
+<?php
+
+namespace {{ namespace }};
+
+class {{ class }} extends CustomModel
+{
+    /**
+     * Custom table name for model
+     *
+     * @var string
+     */
+    protected $table = 'table_name';
+
+    /**
+     * Custom primary key name form database table
+     *
+     * @var string
+     */
+    protected $primaryKey = 'field';
+
+    /**
+     * set custom primary key type for database table
+     *
+     * @var string
+     */
+    protected $keyType = 'string';
+
+    /**
+     * Set default use form timestamps fields for database table
+     *
+     * @var boolean
+     */
+    public $timestamps = false;
+    
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [];
+
+     /**
+     * The attributes excluded from the model's JSON form.
+     *
+     * @var array
+     */
+    protected $hidden = [];
+     
+     /**
+     * The defualt value for attributes.
+     *
+     * @var array
+     */
+     protected $attributes = [];
+
+     # Scopes
+
+     # Relationships
+
+     # Getters
+
+     # Setters
+}

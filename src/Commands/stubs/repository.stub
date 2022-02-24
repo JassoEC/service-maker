@@ -1,0 +1,19 @@
+<?php
+
+namespace {{ namespace }};
+
+use App\Repositories\BaseRepository;
+use App\Models\{{model}};
+
+class {{ class }} extends BaseRepository
+{
+    /**
+    * Setup parent's configuration
+    *
+    * @param \App\Models\{{model}} ${{variable_model}}
+    */
+    public function __construct({{model}} ${{variable_model}}) 
+    {
+      parent::__construct(${{variable_model}});
+    }
+}
