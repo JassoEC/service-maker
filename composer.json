@@ -1,6 +1,10 @@
 {
     "name": "jassoec/service-maker",
     "description": "Creates laravel files for services pattern",
+    "authors": [{
+        "name": "emanuel campos",
+        "email": "isw.ecamposj@gmail.com"
+    }],
     "minimum-stability": "dev",
     "require": {},
     "autoload": {
