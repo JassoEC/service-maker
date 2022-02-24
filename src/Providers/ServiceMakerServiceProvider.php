@@ -1,6 +1,6 @@
 <?php
 
-namespace Ecjasso\ServiceMaker\Providers;
+namespace Jassoec\ServiceMaker\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
