@@ -51,7 +51,7 @@ class ServiceMakerServiceProvider extends ServiceProvider
     protected function registerServiceMakeCommand()
     {
         $this->app->singleton('command.service.make', function ($app) {
-            return new \Ecjasso\ServiceMaker\Commands\CreateServiceCommand($app['files']);
+            return new \Jassoec\ServiceMaker\Commands\CreateServiceCommand($app['files']);
         });
     }
 
@@ -61,7 +61,7 @@ class ServiceMakerServiceProvider extends ServiceProvider
     protected function registerRepositoryMakeCommand()
     {
         $this->app->singleton('command.repository.make', function ($app) {
-            return new \Ecjasso\ServiceMaker\Commands\CreateRepositoryCommand($app['files']);
+            return new \Jassoec\ServiceMaker\Commands\CreateRepositoryCommand($app['files']);
         });
     }
 
@@ -71,7 +71,7 @@ class ServiceMakerServiceProvider extends ServiceProvider
     protected function registerTraitMakeCommand()
     {
         $this->app->singleton('command.trait.make', function ($app) {
-            return new \Ecjasso\ServiceMaker\Commands\CreateTraitCommand($app['files']);
+            return new \Jassoec\ServiceMaker\Commands\CreateTraitCommand($app['files']);
         });
     }
 
@@ -81,7 +81,7 @@ class ServiceMakerServiceProvider extends ServiceProvider
     protected function registerValidatorMakeCommand()
     {
         $this->app->singleton('command.validator.make', function ($app) {
-            return new \Ecjasso\ServiceMaker\Commands\MakeValidatorCommand($app['files']);
+            return new \Jassoec\ServiceMaker\Commands\MakeValidatorCommand($app['files']);
         });
     }
 }
