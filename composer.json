@@ -11,5 +11,6 @@
         "psr-4": {            
             "Ecjasso\\ServiceMaker\\": "src/"
         }
-    }      
+    },
+    "prefer-stable": true
 }
