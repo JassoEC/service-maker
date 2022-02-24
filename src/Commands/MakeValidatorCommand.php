@@ -1,6 +1,6 @@
 <?php
 
-namespace Ecjasso\ServiceMaker\Commands;
+namespace Jassoec\ServiceMaker\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Console\GeneratorCommand;
